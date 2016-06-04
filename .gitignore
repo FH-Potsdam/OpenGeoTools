@@ -1,0 +1,18 @@
+# MAC OSX
+.DS_Store
+# WIN
+Thumbs.db
+# nodejs and web dev
+node_modules
+bower_components
+
+# sublime
+*.sublime-project
+*.sublime-workspace
+# a file with private data
+private.json
+private
+
+# a hidden bin folder for build tools
+*.bin
+
