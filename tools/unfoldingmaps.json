@@ -1,0 +1,160 @@
+
+
+{
+	"id": "unfoldingmaps",
+	"name": "Unfolding Maps",
+	"version": "0.9.8",
+	
+	
+	"type": {
+		"output": "Desktop",
+		"languages": ["Java", "Processing"]
+	},
+	
+	"features": {
+		"data-structure": {
+			"spatial": {
+				"points": {
+					"value": 1,
+					"comment": ""
+				},
+				"multipoints": {
+					"value": 1,
+					"comment": ""
+				},
+				"lines": {
+					"value": 1,
+					"comment": ""
+				},
+				"multilines": {
+					"value": 1,
+					"comment": ""
+				},
+				"polygon": {
+					"value": 1,
+					"comment": ""
+				},
+				"multipolygon": {
+					"value": 1,
+					"comment": ""
+				},
+				"collection": {
+					"value": 1,
+					"comment": ""
+				}
+			}
+		},
+		
+		"data-operations": {
+			"geocoder": {
+				"value:": 2,
+				"comment": "Provides a utility class using an external service."
+			},
+			"distance": {
+				"value": 1,
+				"comment": "",
+			},
+			"contains": {
+				"value": 1,
+				"comment": "",
+			}
+
+		},
+		
+		"data-source": {
+			"fileformat": {
+				"csv": {
+					"value": 3,
+					"comment": "Able to parse CSV, but manual semantic field matching."
+				},
+				"geojson": {
+					"value": 1,
+					"comment": ""
+				},
+				"kml": {
+					"value": 0,
+					"comment": ""
+				},
+				"shp": {
+					"value": 0,
+					"comment": ""
+				},
+				"gml": {
+					"value": 0,
+					"comment": ""
+				},
+				"gpx": {
+					"value": 3,
+					"comment": ""
+				},
+				"geotiff" {
+					"value": 0,
+					"comment": ""
+				}
+			},
+			"server": {
+				"wms": {
+					"value": 1,
+					"comment": "",
+				},
+				"wfs": {
+					"value": 3,
+					"comment": "Provides examples for querying features",
+				},
+				"wmts": {
+					"value": 1,
+					"comment": "",
+				},
+				"postgis": {
+					"value": 0,
+					"comment": ""
+				},
+				"localfile": {
+					
+				},
+				"url": {
+					
+				},
+				"mbtiles": {
+					"value": 1,
+					"comment": ""
+				}
+			}
+		},
+		
+		"visualization": {
+			"basemap": {
+				"image": {
+					"value": 1,
+					"comment": ""
+				},
+				"tiles": {
+					"value": 1,
+					"comment": ""
+				},
+				"vector": {
+					"value": 1,
+					"comment": ""
+				}
+			},
+			"marker": {
+				"simple": {
+					"value": 1,
+					"comment": ""
+				},
+				"custom": {
+					"value": 1,
+					"comment": ""
+				},
+				"complex": {
+					"value": 1,
+					"comment": ""
+				}
+			}
+			
+		}
+	},
+	
+	"comments": {
+	}
+}
