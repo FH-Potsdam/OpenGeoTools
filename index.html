@@ -92,7 +92,7 @@ outtro
 			}
 			var tr = tbody.append("tr");
 			for(var j in tkeys){
-				tr.append("th").text(tkeys[j]);
+				tr.append("th").text((tkeys[j]!==false)?tkeys[j]:"");
 			}
 			for(var j in tools){
 				var t;
