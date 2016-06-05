@@ -27,22 +27,31 @@ outtro
 	}
 
 	function loadJson(){
-		d3.json("./"+jsons[load][0], function(data){
-			if(data.id==="master"){master = tools.length;}
-			tools.push({
-				file:jsons[load][0],
-				name:fileName(jsons[load][0]),
-				date:new Date(jsons[load][1]),
-				data:data,
-				html:htmlExists(jsons[load][0])
+		if(jsons[load][0].indexOf("template.json")<0){
+			d3.json("./"+jsons[load][0], function(data){
+				if(data.id==="master"){master = tools.length;}
+				tools.push({
+					file:jsons[load][0],
+					name:fileName(jsons[load][0]),
+					date:new Date(jsons[load][1]),
+					data:data,
+					html:htmlExists(jsons[load][0])
+				});
+				load++;
+				if(load<jsons.length){
+					setTimeout(loadJson, 1);
+				}else{
+					init();
+				}
 			});
+		}else{
 			load++;
 			if(load<jsons.length){
 				setTimeout(loadJson, 1);
 			}else{
 				init();
 			}
-		});
+		}
 	}
 
 	function countProperties(obj){

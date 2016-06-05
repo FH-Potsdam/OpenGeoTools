@@ -176,7 +176,269 @@
 					"comment": "",
 					"description":"This field means this and that"
 				}
-			}			
+			},
+			"relations": {
+				"connections": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"connections-attr": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"connections-weight": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"area": {
+				"choropleth": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"grid": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"heat": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"isoline": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"cartogram": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"metadata": {
+				"tooltip-text": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"tooltip-graph": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"tooltip-media": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"detail-area": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"ut8": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"graphs": {
+				"bars": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"histogram": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"radial": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"nodelink": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"other": {
+				"small-multiple": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"time-series": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"cmv": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			}
+		},
+		"interactions": {
+			"description":"Short description",
+			"map": {
+				"description":"Short description",
+				"pan": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"zoom": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"rotate": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"tap": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"select": {
+				"tap-marker": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"tap-cluster": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"draw-shape": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"tap-area": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"connection": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"button": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"time": {
+				"static": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"animation": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"start-stop": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"select": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"select-range": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"other": {
+				"brush-link": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"transitions": {
+				"time": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"space": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"selection": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"views": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			}
+		},
+		"output": {
+			"description":"Short description",
+			"static": {
+				"description":"Short description",
+				"image": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"vector": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"dynamic": {
+				"animation": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"interactive-web": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"interactive-desktop": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				}
+			},
+			"extendable": {
+				"value": 1,
+				"comment": "",
+				"description":"This field means this and that"
+			}
 		}
 	}
 }
