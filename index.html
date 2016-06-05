@@ -13,10 +13,8 @@ outtro
 	function htmlExists(json){
 		var r = false;
 		var j = fileName(json);
-		console.log("j",j);
 		for(var i in htmls){
 			html = fileName(htmls[i]);
-			console.log("html",html);
 			if(html === j){
 				r = true;
 			}
@@ -33,11 +31,11 @@ outtro
 			if(data.id==="master"){master = tools.length;}
 			tools.push({
 				file:jsons[load][0],
+				name:fileName(jsons[load][0]),
 				date:new Date(jsons[load][1]),
 				data:data,
 				html:htmlExists(jsons[load][0])
 			});
-			console.log(htmlExists(jsons[load][0]));
 			load++;
 			if(load<jsons.length){
 				setTimeout(loadJson, 1);
@@ -103,7 +101,7 @@ outtro
 			thead.append("th");
 			thead.selectAll("th.head").data(tools.filter(ignoreMaster)).enter().append("th")
 				.attr("class","head")
-				.text(function(d){ return d.data.name; });
+				.html(function(d){ return ((d.html)?"<a href=\"./tools/"+d.name+"\".html">":"")+d.data.name+((d.html)?"</a>":""); });
 
 		var tbody = table.append("tbody");
 		
