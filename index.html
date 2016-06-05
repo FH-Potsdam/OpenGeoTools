@@ -10,14 +10,32 @@ outtro
 	var tools = [], structure = {}, master = false;
 	var load = 0;
 
+	function htmlExists(json){
+		var r = false;
+		var j = fileName(json);
+		for(var i in htmls){
+			html = fileName(htmls[i]);
+			if(html === json){
+				r = true;
+			}
+		}
+		return r;
+	}
+
+	function fileName(file){
+		return (((file.split("/"))[((file.split("/")).length-1)]).split("."))[0];
+	}
+
 	function loadJson(){
-		d3.json(jsons[load][0], function(data){
+		d3.json("./"+jsons[load][0], function(data){
 			if(data.id==="master"){master = tools.length;}
 			tools.push({
 				file:jsons[load][0],
 				date:new Date(jsons[load][1]),
-				data:data
+				data:data,
+				html:htmlExists(jsons[load][0])
 			});
+			console.log(htmlExists(jsons[load][0]));
 			load++;
 			if(load<jsons.length){
 				setTimeout(loadJson, 1);
