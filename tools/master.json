@@ -1,0 +1,181 @@
+{
+	"id": "master",
+	"features": {
+		"data-structure": {
+			"spatial": {
+				"points": {
+					"value": 1,
+					"comment": "",
+					"label":"Point",
+					"description":"This field means this and that"
+				},
+				"multipoints": {
+					"value": 1,
+					"comment": "",
+					"label":"MultiPoint",
+					"description":"This field means this and that"
+				},
+				"lines": {
+					"value": 1,
+					"comment": ""
+				},
+				"multilines": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"polygon": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"multipolygon": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"collection": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"description":"This field means this and that"
+			},
+			"description":"This field means this and that"
+		},
+		
+		"data-operations": {
+			"geocoder": {
+				"value": 2,
+				"comment": "Provides a utility class using an external service."
+			},
+			"distance": {
+				"value": 1,
+				"comment": "",
+				"description":"This field means this and that"
+			},
+			"contains": {
+				"value": 1,
+				"comment": "",
+				"description":"This field means this and that"
+			},
+			"description":"This field means this and that"
+		},
+		
+		"data-source": {
+			"fileformat": {
+				"csv": {
+					"value": 3,
+					"comment": "Able to parse CSV, but manual semantic field matching.",
+					"description":"This field means this and that"
+				},
+				"geojson": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"kml": {
+					"value": 0,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"shp": {
+					"value": 0,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"gml": {
+					"value": 0,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"gpx": {
+					"value": 3,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"geotiff" : {
+					"value": 0,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"description":"This field means this and that"
+			},
+			"server": {
+				"wms": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"wfs": {
+					"value": 3,
+					"comment": "Provides examples for querying features"
+				},
+				"wmts": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"postgis": {
+					"value": 0,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"localfile": {
+					
+				},
+				"url": {
+					
+				},
+				"mbtiles": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"description":"This field means this and that"
+			},
+			"description":"This field means this and that"
+		},
+		
+		"visualization": {
+			"basemap": {
+				"image": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"tiles": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"vector": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"description":"This field means this and that"
+			},
+			"marker": {
+				"simple": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"custom": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"complex": {
+					"value": 1,
+					"comment": "",
+					"description":"This field means this and that"
+				},
+				"description":"This field means this and that"
+			},
+			"description":"This field means this and that"
+			
+		}
+	}
+}

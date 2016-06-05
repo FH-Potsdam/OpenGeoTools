@@ -7,11 +7,12 @@ outtro
 {% include js-files.html %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 <script type="text/javascript">
-	var tools = [], structure = {};
+	var tools = [], structure = {}, master = false;
 	var load = 0;
 
 	function loadJson(){
-		d3.json("."+jsons[load][0], function(data){
+		d3.json(jsons[load][0], function(data){
+			if(data.id==="master"){master = tools.length;}
 			tools.push({
 				file:jsons[load][0],
 				date:new Date(jsons[load][1]),
@@ -37,18 +38,20 @@ outtro
 	function init(){
 		for(var i in tools){
 			for(var key1 in tools[i].data.features){
-				if(!(key1 in structure)){
-					structure[key1] = {};
-				}
-				for(var key2 in tools[i].data.features[key1]){
-					if(key2 !== "value" && key2 !== "comment"){
-						if(!(key2 in structure[key1])){
-							structure[key1][key2] = {};
-						}
-						for(var key3 in tools[i].data.features[key1][key2]){
-							if(key3 !== "value" && key3 !== "comment"){
-								if(!(key3 in structure[key1][key2])){
-									structure[key1][key2][key3] = {};
+				if(key1 !== "description" && key1 !== "label"){
+					if(!(key1 in structure)){
+						structure[key1] = {};
+					}
+					for(var key2 in tools[i].data.features[key1]){
+						if(key2 !== "value" && key2 !== "comment" && key2 !== "description" && key2 !== "label"){
+							if(!(key2 in structure[key1])){
+								structure[key1][key2] = {};
+							}
+							for(var key3 in tools[i].data.features[key1][key2]){
+								if(key3 !== "value" && key3 !== "comment" && key3 !== "description" && key3 !== "label"){
+									if(!(key3 in structure[key1][key2])){
+										structure[key1][key2][key3] = {};
+									}
 								}
 							}
 						}
@@ -69,12 +72,16 @@ outtro
 			}
 		}
 
+		function ignoreMaster(d){
+			return (d.file.indexOf("master.json")>=0)?false:true;
+		}
+
 		var table = d3.select('#matrix').append("table");
 		var thead = table.append("thead").append("tr");
 			thead.append("th");
 			thead.append("th");
 			thead.append("th");
-			thead.selectAll("th.head").data(tools).enter().append("th")
+			thead.selectAll("th.head").data(tools.filter(ignoreMaster)).enter().append("th")
 				.attr("class","head")
 				.text(function(d){ return d.data.name; });
 
@@ -92,16 +99,44 @@ outtro
 			}
 			var tr = tbody.append("tr");
 			for(var j in tkeys){
-				tr.append("th").text((tkeys[j]!==false)?tkeys[j]:"");
+				var label = (tkeys[j]!==false)?tkeys[j]:"",
+					descr = ""; 
+
+				if(tkeys[j]!==false && tkeys[j]!==""){
+					switch(j){
+						case "0":
+							descr = ("description" in tools[master].data.features[keys[0]])?tools[master].data.features[keys[0]].description:"";
+							label = ("label" in tools[master].data.features[keys[0]])?tools[master].data.features[keys[0]].label:label;
+						break;
+						case "1":
+							descr = ("description" in tools[master].data.features[keys[0]][keys[1]])?tools[master].data.features[keys[0]][keys[1]].description:"";
+							label = ("label" in tools[master].data.features[keys[0]][keys[1]])?tools[master].data.features[keys[0]][keys[1]].label:label;
+						break;
+						case "2":
+							descr = ("description" in tools[master].data.features[keys[0]][keys[1]][keys[2]])?tools[master].data.features[keys[0]][keys[1]][keys[2]].description:"";
+							label = ("label" in tools[master].data.features[keys[0]][keys[1]][keys[2]])?tools[master].data.features[keys[0]][keys[1]][keys[2]].label:label;
+						break;
+					}
+				}
+
+				tr.append("th")
+					.attr("title", descr)
+					.text(label);
 			}
 			for(var j in tools){
-				var t;
-				if(flat[i][2]===false){
-					t = tools[j].data.features[keys[0]][keys[1]].value;
-				}else{
-					t = tools[j].data.features[keys[0]][keys[1]][keys[2]].value;
+				if(tools[j].file.indexOf("master.json")<0){
+					var t = "-";
+					if(flat[i][2]===false){
+						if((keys[0] in tools[j].data.features) && (keys[1] in tools[j].data.features[keys[0]]) && ("value" in tools[j].data.features[keys[0]][keys[1]])){
+							t = tools[j].data.features[keys[0]][keys[1]].value;
+						}
+					}else{
+						if((keys[0] in tools[j].data.features) && (keys[1] in tools[j].data.features[keys[0]]) && (keys[2] in tools[j].data.features[keys[0]][keys[1]]) && ("value" in tools[j].data.features[keys[0]][keys[1]][keys[2]])){
+							t = tools[j].data.features[keys[0]][keys[1]][keys[2]].value;
+						}
+					}
+					tr.append("td").text(t);
 				}
-				tr.append("td").text(t);
 			}
 		}
 
