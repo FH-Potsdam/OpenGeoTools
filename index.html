@@ -101,7 +101,7 @@ outtro
 			thead.append("th");
 			thead.selectAll("th.head").data(tools.filter(ignoreMaster)).enter().append("th")
 				.attr("class","head")
-				.html(function(d){ return ((d.html)?"<a href=\"./tools/"+d.name+"\".html">":"")+d.data.name+((d.html)?"</a>":""); });
+				.html(function(d){ return ((d.html)?"<a href=\"./tools/"+d.name+".html\">":"")+d.data.name+((d.html)?"</a>":""); });
 
 		var tbody = table.append("tbody");
 		
