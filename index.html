@@ -13,9 +13,11 @@ outtro
 	function htmlExists(json){
 		var r = false;
 		var j = fileName(json);
+		console.log("j",j);
 		for(var i in htmls){
 			html = fileName(htmls[i]);
-			if(html === json){
+			console.log("html",html);
+			if(html === j){
 				r = true;
 			}
 		}
