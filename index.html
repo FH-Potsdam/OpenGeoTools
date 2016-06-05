@@ -1,27 +1,113 @@
 ---
 layout: default
 ---
+intro
+<div id="matrix"></div>
+outtro
+{% include js-files.html %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<script type="text/javascript">
+	var tools = [], structure = {};
+	var load = 0;
 
-{% for file in site.static_files %}
-{{% file %}}
-{% endfor %}
+	function loadJson(){
+		d3.json("."+jsons[load][0], function(data){
+			tools.push({
+				file:jsons[load][0],
+				date:new Date(jsons[load][1]),
+				data:data
+			});
+			load++;
+			if(load<jsons.length){
+				setTimeout(loadJson, 1);
+			}else{
+				init();
+			}
+		});
+	}
 
-<div class="home">
+	function countProperties(obj){
+		var c = 0;
+		for(var prop in obj){
+			c++;
+		}
+		return c;
+	}
 
-  <h1 class="page-heading">Posts</h1>
+	function init(){
+		for(var i in tools){
+			for(var key1 in tools[i].data.features){
+				if(!(key1 in structure)){
+					structure[key1] = {};
+				}
+				for(var key2 in tools[i].data.features[key1]){
+					if(key2 !== "value" && key2 !== "comment"){
+						if(!(key2 in structure[key1])){
+							structure[key1][key2] = {};
+						}
+						for(var key3 in tools[i].data.features[key1][key2]){
+							if(key3 !== "value" && key3 !== "comment"){
+								if(!(key3 in structure[key1][key2])){
+									structure[key1][key2][key3] = {};
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		var flat = [];
+		for(var key1 in structure){
+			for(var key2 in structure[key1]){
+				if(countProperties(structure[key1][key2])===0){
+					flat.push([key1,key2,false]);
+				}
+				for(var key3 in structure[key1][key2]){
+					flat.push([key1,key2,key3]);
+				}
+			}
+		}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+		var table = d3.select('#matrix').append("table");
+		var thead = table.append("thead").append("tr");
+			thead.append("th");
+			thead.append("th");
+			thead.append("th");
+			thead.selectAll("th.head").data(tools).enter().append("th")
+				.attr("class","head")
+				.text(function(d){ return d.data.name; });
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		var tbody = table.append("tbody");
+		
+		var keys = [false,false,false];
+		for(var i in flat){
+			var tkeys = [];
+			for(var j in flat[i]){ 
+				if(flat[i][j] === keys[j]){
+					tkeys[j] = "";
+				}else{
+					tkeys[j] = keys[j] = flat[i][j];
+				}
+			}
+			var tr = tbody.append("tr");
+			for(var j in tkeys){
+				tr.append("th").text(tkeys[j]);
+			}
+			for(var j in tools){
+				var t;
+				if(flat[i][2]===false){
+					t = tools[j].data.features[keys[0]][keys[1]].value;
+				}else{
+					t = tools[j].data.features[keys[0]][keys[1]][keys[2]].value;
+				}
+				tr.append("td").text(t);
+			}
+		}
 
-</div>
+
+	}
+
+	loadJson();
+
+</script>
