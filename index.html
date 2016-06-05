@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% for file in site.static_files %}
+{{% file %}}
+{% endfor %}
+
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
