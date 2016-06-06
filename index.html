@@ -10,73 +10,73 @@ outtro
 	var tools = [], structure = {}, master = false;
 	var load = 0;
 
-	function htmlExists(json){
+	function htmlExists(json) {
 		var r = false;
 		var j = fileName(json);
-		for(var i in htmls){
+		for (var i in htmls) {
 			html = fileName(htmls[i]);
-			if(html === j){
+			if (html === j) {
 				r = true;
 			}
 		}
 		return r;
 	}
 
-	function fileName(file){
+	function fileName(file) {
 		return (((file.split("/"))[((file.split("/")).length-1)]).split("."))[0];
 	}
 
-	function loadJson(){
-		if(jsons[load][0].indexOf("template.json")<0){
-			d3.json("./"+jsons[load][0], function(data){
-				if(data.id==="master"){master = tools.length;}
+	function loadJson() {
+		if (jsons[load][0].indexOf("template.json")<0) {
+			d3.json("./"+jsons[load][0], function(data) {
+				if (data.id === "master") { master = tools.length; }
 				tools.push({
-					file:jsons[load][0],
-					name:fileName(jsons[load][0]),
-					date:new Date(jsons[load][1]),
-					data:data,
-					html:htmlExists(jsons[load][0])
+					file: jsons[load][0],
+					name: fileName(jsons[load][0]),
+					date: new Date(jsons[load][1]),
+					data: data,
+					html: htmlExists(jsons[load][0])
 				});
 				load++;
-				if(load<jsons.length){
+				if (load < jsons.length) {
 					setTimeout(loadJson, 1);
-				}else{
+				} else {
 					init();
 				}
 			});
-		}else{
+		} else {
 			load++;
-			if(load<jsons.length){
+			if (load < jsons.length) {
 				setTimeout(loadJson, 1);
-			}else{
+			} else {
 				init();
 			}
 		}
 	}
 
-	function countProperties(obj){
+	function countProperties(obj) {
 		var c = 0;
-		for(var prop in obj){
+		for (var prop in obj) {
 			c++;
 		}
 		return c;
 	}
 
-	function init(){
-		for(var i in tools){
-			for(var key1 in tools[i].data.features){
-				if(key1 !== "description" && key1 !== "label"){
-					if(!(key1 in structure)){
+	function init() {
+		for (var i in tools) {
+			for (var key1 in tools[i].data.features) {
+				if (key1 !== "description" && key1 !== "label") {
+					if (!(key1 in structure)) {
 						structure[key1] = {};
 					}
-					for(var key2 in tools[i].data.features[key1]){
-						if(key2 !== "value" && key2 !== "comment" && key2 !== "description" && key2 !== "label"){
-							if(!(key2 in structure[key1])){
+					for (var key2 in tools[i].data.features[key1]) {
+						if (key2 !== "value" && key2 !== "comment" && key2 !== "description" && key2 !== "label") {
+							if (!(key2 in structure[key1])) {
 								structure[key1][key2] = {};
 							}
-							for(var key3 in tools[i].data.features[key1][key2]){
-								if(key3 !== "value" && key3 !== "comment" && key3 !== "description" && key3 !== "label"){
-									if(!(key3 in structure[key1][key2])){
+							for (var key3 in tools[i].data.features[key1][key2]) {
+								if (key3 !== "value" && key3 !== "comment" && key3 !== "description" && key3 !== "label") {
+									if (!(key3 in structure[key1][key2])) {
 										structure[key1][key2][key3] = {};
 									}
 								}
@@ -88,19 +88,19 @@ outtro
 		}
 
 		var flat = [];
-		for(var key1 in structure){
-			for(var key2 in structure[key1]){
-				if(countProperties(structure[key1][key2])===0){
+		for (var key1 in structure) {
+			for (var key2 in structure[key1]) {
+				if (countProperties(structure[key1][key2]) === 0) {
 					flat.push([key1,key2,false]);
 				}
-				for(var key3 in structure[key1][key2]){
+				for (var key3 in structure[key1][key2]) {
 					flat.push([key1,key2,key3]);
 				}
 			}
 		}
 
-		function ignoreMaster(d){
-			return (d.file.indexOf("master.json")>=0)?false:true;
+		function ignoreMaster(d) {
+			return (d.file.indexOf("master.json") < 0);
 		}
 
 		var table = d3.select('#matrix').append("table");
@@ -113,21 +113,28 @@ outtro
 				.html(function(d){ return ((d.html)?"<a href=\"./tools/"+d.name+".html\">":"")+d.data.name+((d.html)?"</a>":""); });
 
 		var tbody = table.append("tbody");
-		
+
 		var keys = [false,false,false];
 		for(var i in flat){
 			var tkeys = [];
-			for(var j in flat[i]){ 
+			for(var j in flat[i]){
 				if(flat[i][j] === keys[j]){
 					tkeys[j] = "";
 				}else{
 					tkeys[j] = keys[j] = flat[i][j];
 				}
 			}
-			var tr = tbody.append("tr");
-			for(var j in tkeys){
+
+			// var tr = tbody.append("tr");
+			// if (i == 0) {
+			// 	tr.attr("class", "topCategoryLevel");
+			// }
+			// tr.attr("class", "row-" + i);
+			var tr = null;
+
+			for (var j in tkeys) {
 				var label = (tkeys[j]!==false)?tkeys[j]:"",
-					descr = ""; 
+					descr = "";
 
 				if(tkeys[j]!==false && tkeys[j]!==""){
 					switch(j){
@@ -146,10 +153,21 @@ outtro
 					}
 				}
 
+				if (j == 0) {
+					tr = tbody.append("tr");
+					if (label !== "") {
+						tr.attr("class", "categorySpacer");
+						tr.append("th");
+						tr.append("td");
+						tr = tbody.append("tr");
+					}
+				}
+
 				tr.append("th")
 					.attr("title", descr)
 					.text(label);
 			}
+
 			for(var j in tools){
 				if(tools[j].file.indexOf("master.json")<0){
 					var t = "-";
