@@ -2,7 +2,7 @@
 	"id": "master",
 	"features": {
 		"data-structure": {
-			"description":"Short description",
+			"description":"Structure of data the tool can read and process.",
 			"label": "Data Structure",
 			"spatial": {
 				"description":"Short description",
@@ -21,7 +21,8 @@
 				},
 				"lines": {
 					"value": 1,
-					"comment": ""
+					"comment": "",
+					"label":"Lines"
 				},
 				"multilines": {
 					"value": 1,
@@ -45,7 +46,7 @@
 				}
 			}
 		},
-		
+
 		"data-operations": {
 			"description":"Data Operations",
 			"label": "Data Operations",
@@ -64,7 +65,7 @@
 				"description":"This field means this and that"
 			}
 		},
-		
+
 		"data-source": {
 			"description":"Short description",
 			"fileformat": {
@@ -127,10 +128,10 @@
 					"description":"This field means this and that"
 				},
 				"localfile": {
-					
+
 				},
 				"url": {
-					
+
 				},
 				"mbtiles": {
 					"value": 1,
@@ -139,7 +140,7 @@
 				}
 			}
 		},
-		
+
 		"visualization": {
 			"description":"Short description",
 			"basemap": {

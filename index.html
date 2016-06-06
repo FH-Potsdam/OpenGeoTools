@@ -10,6 +10,12 @@ outtro
 	var tools = [], structure = {}, master = false;
 	var load = 0;
 
+	var valuesMap = {
+			"0": {"label": "No", "icon": "✗", "image": "no.png"},
+			"1": {"label": "Yes", "icon": "✓", "image": "yes.png"},
+			"2": {"label": "Partial", "icon": "(✓)", "image": "partial.png"},
+			"3": {"label": "N/A", "icon": "n/a", "image": "notavailable.png"} };
+
 	function htmlExists(json) {
 		var r = false;
 		var j = fileName(json);
@@ -114,6 +120,8 @@ outtro
 
 		var tbody = table.append("tbody");
 
+		var topCategoryIndex = 0;
+
 		var keys = [false,false,false];
 		for(var i in flat){
 			var tkeys = [];
@@ -155,11 +163,16 @@ outtro
 
 				if (j == 0) {
 					tr = tbody.append("tr");
+					tr.attr("class", "topCategory-" + topCategoryIndex);
+
+					// Add spacer between top-level category rows
 					if (label !== "") {
 						tr.attr("class", "categorySpacer");
 						tr.append("th");
 						tr.append("td");
 						tr = tbody.append("tr");
+						topCategoryIndex++;
+						tr.attr("class", "topCategory-" + topCategoryIndex);
 					}
 				}
 
@@ -180,7 +193,16 @@ outtro
 							t = tools[j].data.features[keys[0]][keys[1]][keys[2]].value;
 						}
 					}
-					tr.append("td").text(t);
+
+
+					var label = "-";
+					var icon = "-";
+					if (t in valuesMap) {
+							var valueObject = valuesMap[t];
+							label = valueObject.label;
+							icon = valueObject.icon;
+					}
+					tr.append("td").text(icon);
 				}
 			}
 		}

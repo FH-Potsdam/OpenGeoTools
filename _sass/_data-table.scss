@@ -3,9 +3,19 @@ th {
   text-align: left;
 }
 
-tr.topCategoryLevel {
-    background-color: $grey-color;
+tr.topCategory-1 {
+    background-color: $taxonomy-color-1;
 }
+tr.topCategory-2 {
+    background-color: $taxonomy-color-2;
+}
+tr.topCategory-3 {
+    background-color: $taxonomy-color-3;
+}
+tr.topCategory-4 {
+    background-color: $taxonomy-color-4;
+}
+
 
 tr.categorySpacer > td
 {
