@@ -379,28 +379,6 @@
 					"comment": "",
 					"description":"This field means this and that"
 				}
-			},
-			"transitions": {
-				"time": {
-					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
-				},
-				"space": {
-					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
-				},
-				"selection": {
-					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
-				},
-				"views": {
-					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
-				}
 			}
 		},
 		"output": {

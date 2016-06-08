@@ -299,24 +299,6 @@
 					"value": 1,
 					"comment": ""
 				}
-			},
-			"transitions": {
-				"time": {
-					"value": 1,
-					"comment": ""
-				},
-				"space": {
-					"value": 1,
-					"comment": ""
-				},
-				"selection": {
-					"value": 1,
-					"comment": ""
-				},
-				"views": {
-					"value": 1,
-					"comment": ""
-				}
 			}
 		},
 		"output": {

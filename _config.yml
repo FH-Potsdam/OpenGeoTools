@@ -18,3 +18,4 @@ include: [tools]
 
 # Build settings
 markdown: kramdown
+syntax_highlighter: rouge
