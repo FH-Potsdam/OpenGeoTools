@@ -4,7 +4,7 @@ json: unfoldingmaps.json
 ---
 # Leaflet
 
-<div id="basic"></div>
+<div id="basic" style="width:100%; height:200px;"></div>
 
 ```HTML
 <div id="map"></div>
