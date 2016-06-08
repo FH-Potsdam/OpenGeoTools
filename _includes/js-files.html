@@ -1,4 +1,4 @@
 <script type="text/javascript">
 	var jsons = {% assign first_json = false %}[{% for f in site.static_files %}{% if f.extname == ".json" and f.path contains "/tools/" %}{% if first_json == true %},{% endif %}["{{ f.path }}","{{ f.modified_time }}"]{% assign first_json = true %}{% endif %}{% endfor %}];
-	var htmls = {% assign first_json = false %}[{% for f in site.html_pages %}{% if f.url contains "/tools/" %}{% if first_json == true %},{% endif %}"{{ f.url }}"{% assign first_json = true %}{% endif %}{% endfor %}];
+	var htmls = {% assign first_json = false %}[{% for f in site.pages %}{% if f.url contains "/tools/" %}{% if first_json == true %},{% endif %}"{{ f.url }}"{% assign first_json = true %}{% endif %}{% endfor %}];
 </script>
