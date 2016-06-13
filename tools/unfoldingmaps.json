@@ -166,8 +166,8 @@
 				}
 			}
 
-		}
-	},
+		},
+
 	"output": {
 		"static": {
 			"image": {
@@ -193,6 +193,7 @@
 				"comment": ""
 			}
 		},
+	},
 	"comments": {
 	}
 }
