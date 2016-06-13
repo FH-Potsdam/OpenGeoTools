@@ -4,13 +4,13 @@
 	"id": "unfoldingmaps",
 	"name": "Unfolding Maps",
 	"version": "0.9.8",
-	
-	
+
+
 	"type": {
 		"output": "Desktop",
 		"languages": ["Java", "Processing"]
 	},
-	
+
 	"features": {
 		"data-structure": {
 			"spatial": {
@@ -44,7 +44,7 @@
 				}
 			}
 		},
-		
+
 		"data-operations": {
 			"geocoder": {
 				"value": 2,
@@ -60,7 +60,7 @@
 			}
 
 		},
-		
+
 		"data-source": {
 			"fileformat": {
 				"csv": {
@@ -110,10 +110,10 @@
 					"comment": ""
 				},
 				"localfile": {
-					
+
 				},
 				"url": {
-					
+
 				},
 				"mbtiles": {
 					"value": 1,
@@ -121,7 +121,7 @@
 				}
 			}
 		},
-		
+
 		"visualization": {
 			"basemap": {
 				"image": {
@@ -133,7 +133,7 @@
 					"comment": ""
 				},
 				"vector": {
-					"value": 1,
+					"value": 3,
 					"comment": ""
 				}
 			},
@@ -150,11 +150,49 @@
 					"value": 1,
 					"comment": ""
 				}
+			},
+			"relations": {
+				"connections": {
+					"value": 3,
+					"comment": ""
+				}
+			},
+			"area": {
+				"choropleth": {
+					"value": 1,
+				},
+				"grid": {
+					"value":
+				}
 			}
-			
+
 		}
 	},
-	
+	"output": {
+		"static": {
+			"image": {
+				"value": 1,
+				"comment": ""
+			},
+			"vector": {
+				"value": 2,
+				"comment": ""
+			}
+		},
+		"dynamic": {
+			"animation": {
+				"value": 1,
+				"comment": ""
+			},
+			"interactive-web": {
+				"value": 2,
+				"comment": ""
+			},
+			"interactive-desktop": {
+				"value": 1,
+				"comment": ""
+			}
+		},
 	"comments": {
 	}
 }
