@@ -229,6 +229,8 @@ layout: default
 							var valueObject = valuesMap[t];
 							label = valueObject.label;
 							icon = valueObject.icon;
+					}else{
+						t = 3;
 					}
 					var td = tr.append("td").attr("class","featCategory-"+t).text(icon);
 					if(d){
