@@ -4,7 +4,6 @@
 	"id": "unfoldingmaps",
 	"name": "Unfolding Maps",
 	"version": "0.9.8",
-	"url": "http://unfoldingmaps.org",
 
 
 	"type": {
@@ -111,12 +110,10 @@
 					"comment": ""
 				},
 				"localfile": {
-					"value": 0,
-					"comment": ""
+
 				},
 				"url": {
-					"value": 0,
-					"comment": ""
+
 				},
 				"mbtiles": {
 					"value": 1,
@@ -136,7 +133,7 @@
 					"comment": ""
 				},
 				"vector": {
-					"value": 3,
+					"value": 1,
 					"comment": ""
 				}
 			},
@@ -153,203 +150,11 @@
 					"value": 1,
 					"comment": ""
 				}
-			},
-			"relations": {
-				"connections": {
-					"value": 2,
-					"comment": ""
-				},
-				"connections-attr": {
-					"value": 2,
-					"comment": ""
-				},
-				"connections-weight": {
-					"value": 2,
-					"comment": "Using the force-directed graph layout, spatial connections and layouts can easily be achieved."
-				}
-			},
-			"area": {
-				"choropleth": {
-					"value": 1,
-					"comment": ""
-				},
-				"grid": {
-					"value": 2,
-					"comment": ""
-				},
-				"heat": {
-					"value": 0,
-					"comment": ""
-				},
-				"isoline": {
-					"value": 2,
-					"comment": ""
-				},
-				"cartogram": {
-					"value": 0,
-					"comment": ""
-				}
-			},
-			"metadata": {
-				"tooltip-text": {
-					"value": 2,
-					"comment": "Can be added via custom code."
-				},
-				"tooltip-graph": {
-					"value": 2,
-					"comment": "Can be added via custom code."
-				},
-				"tooltip-media": {
-					"value": 2,
-					"comment": "Can be added via custom code."
-				},
-				"detail-area": {
-					"value": 2,
-					"comment": "Can be added via custom code."
-				},
-				"utfgrid": {
-					"value": 0,
-					"comment": ""
-				}
-			},
-			"graphs": {
-				"bars": {
-					"value": 1,
-					"comment": ""
-				},
-				"histogram": {
-					"value": 1,
-					"comment": ""
-				},
-				"radial": {
-					"value": 1,
-					"comment": ""
-				},
-				"nodelink": {
-					"value": 1,
-					"comment": "Using the force-directed graph layout, spatial connections and layouts can easily be achieved."
-				}
-			},
-			"other": {
-				"small-multiple": {
-					"value": 1,
-					"comment": ""
-				},
-				"time-series": {
-					"value": 1,
-					"comment": ""
-				},
-				"cmv": {
-					"value": 0,
-					"comment": ""
-				}
 			}
-		},
-		"interactions": {
-			"description":"Short description",
-			"map": {
-				"description":"Short description",
-				"pan": {
-					"value": 1,
-					"comment": ""
-				},
-				"zoom": {
-					"value": 1,
-					"comment": ""
-				},
-				"rotate": {
-					"value": 0,
-					"comment": ""
-				},
-				"tap": {
-					"value": 1,
-					"comment": ""
-				}
-			},
-			"select": {
-				"tap-marker": {
-					"value": 1,
-					"comment": ""
-				},
-				"tap-cluster": {
-					"value": 1,
-					"comment": ""
-				},
-				"draw-shape": {
-					"value": 0,
-					"comment": ""
-				},
-				"tap-area": {
-					"value": 1,
-					"comment": ""
-				},
-				"connection": {
-					"value": 1,
-					"comment": ""
-				},
-				"button": {
-					"value": 1,
-					"comment": ""
-				}
-			},
-			"time": {
-				"static": {
-					"value": 1,
-					"comment": ""
-				},
-				"animation": {
-					"value": 1,
-					"comment": ""
-				},
-				"start-stop": {
-					"value": 1,
-					"comment": ""
-				},
-				"select": {
-					"value": 1,
-					"comment": ""
-				},
-				"select-range": {
-					"value": 1,
-					"comment": ""
-				}
-			},
-			"other": {
-				"brush-link": {
-					"value": 1,
-					"comment": ""
-				}
-			}
-		},
-		"output": {
-			"static": {
-				"image": {
-					"value": 2,
-					"comment": "Instead of using the standard output format SVG, D3 can easily be modified to use Canvas, though some features are difficult to implement."
-				},
-				"vector": {
-					"value": 1,
-					"comment": ""
-				}
-			},
-			"dynamic": {
-				"animation": {
-					"value": 0,
-					"comment": ""
-				},
-				"interactive-web": {
-					"value": 1,
-					"comment": ""
-				},
-				"interactive-desktop": {
-					"value": 0,
-					"comment": ""
-				}
-			},
-			"extendable": {
-				"value": 1,
-				"comment": ""
-			}
+
 		}
+	},
+
+	"comments": {
 	}
 }
