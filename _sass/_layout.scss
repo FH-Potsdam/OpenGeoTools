@@ -1,15 +1,6 @@
 /**
  * Site header
  */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
 .site-title {
     font-size: 26px;
     font-weight: 300;
@@ -172,7 +163,7 @@
 }
 
 .site-header p{
-	padding-top:60px;
+	padding-top:80px;
 	text-align:center;
 	display:block;
 	width:100%;
