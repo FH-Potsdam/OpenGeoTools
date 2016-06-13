@@ -180,17 +180,25 @@
 		width:70px;
 		height:auto;
 		margin-right:20px;
+		vertical-align:bottom;
 	}
 	span{
 		font-family:$base-font-family;
 		font-weight:bold;
 		font-size:50px;
+		line-height
 	}
 }
 
 /**
  * Page content
  */
+
+ h1{
+ 	font-size:16px;
+ 	font-weight:bold;
+ }
+
 .page-content {
     padding: $spacing-unit 0;
 }
