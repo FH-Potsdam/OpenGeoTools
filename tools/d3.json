@@ -4,7 +4,7 @@
 	"id": "d3",
 	"name": "D3",
 	"version": "0.9.8",
-	"url": "http://www.leafletjs.com",
+	"url": "http://www.d3js.org",
 	
 	
 	"type": {
@@ -48,16 +48,16 @@
 		
 		"data-operations": {
 			"geocoder": {
-				"value": 2,
-				"comment": "via <a href='http://leafletjs.com/plugins.html#geocoding'>Plugin</a>."
+				"value": 0,
+				"comment": ""
 			},
 			"distance": {
-				"value": 1,
-				"comment": "distanceTo( <LatLng> otherLatlng )"
+				"value": 0,
+				"comment": ""
 			},
 			"contains": {
-				"value": 3,
-				"comment": "Only for rectangles."
+				"value": 0,
+				"comment": ""
 			}
 
 		},
@@ -65,28 +65,28 @@
 		"data-source": {
 			"fileformat": {
 				"csv": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
-				},
-				"geojson": {
 					"value": 1,
 					"comment": ""
 				},
+				"geojson": {
+					"value": 1,
+					"comment": "Plus TopoJson via <a href='https://github.com/mbostock/topojson'>Plugin</a>"
+				},
 				"kml": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"comment": "Any XML file can be parsed, but geo-features need to be extracted manually."
 				},
 				"shp": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
-				},
-				"gml": {
 					"value": 0,
 					"comment": ""
 				},
-				"gpx": {
+				"gml": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"comment": "Any XML file can be parsed, but geo-features need to be extracted manually."
+				},
+				"gpx": {
+					"value": 0,
+					"comment": ""
 				},
 				"geotiff" : {
 					"value": 0,
@@ -95,16 +95,16 @@
 			},
 			"server": {
 				"wms": {
-					"value": 1,
-					"comment": "Complex wms servers can be integrated through additional <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugins</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"wfs": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"wmts": {
-					"value": 1,
-					"comment": "Complex wms servers can be integrated through additional <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugins</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"postgis": {
 					"value": 0,
@@ -128,62 +128,62 @@
 		"visualization": {
 			"basemap": {
 				"image": {
-					"value": 1,
+					"value": 0,
 					"comment": ""
 				},
 				"tiles": {
-					"value": 1,
+					"value": 0,
 					"comment": ""
 				},
 				"vector": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#vector-tiles'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				}
 			},
 			"marker": {
 				"simple": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "There is no native marker feature, but the creation of spatially positioned objects can easily be achieved."
 				},
 				"custom": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "There is no native marker feature, but the creation of spatially positioned objects can easily be achieved."
 				},
 				"complex": {
-					"value": 1,
-					"comment": "Markers can be build from custom HTML."
+					"value": 2,
+					"comment": "There is no native marker feature, but the creation of spatially positioned objects can easily be achieved."
 				}
 			},
 			"relations": {
 				"connections": {
-					"value": 0,
-					"comment": ""
+					"value": 2,
+					"comment": "Using the force-directed graph layout, spatial connections and layouts can easily be achieved."
 				},
 				"connections-attr": {
-					"value": 0,
-					"comment": ""
+					"value": 2,
+					"comment": "Using the force-directed graph layout, spatial connections and layouts can easily be achieved."
 				},
 				"connections-weight": {
-					"value": 0,
-					"comment": ""
+					"value": 2,
+					"comment": "Using the force-directed graph layout, spatial connections and layouts can easily be achieved."
 				}
 			},
 			"area": {
 				"choropleth": {
 					"value": 1,
-					"comment": "e.g. via GeoJSON"
+					"comment": ""
 				},
 				"grid": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#clusteringdecluttering'>Plugin</a>"
+					"comment": ""
 				},
 				"heat": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#heatmaps'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"isoline": {
 					"value": 2,
-					"comment": "the calculation of Isolines needs to be aggregated from external APIs"
+					"comment": ""
 				},
 				"cartogram": {
 					"value": 0,
@@ -192,52 +192,52 @@
 			},
 			"metadata": {
 				"tooltip-text": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "Can be added via custom code."
 				},
 				"tooltip-graph": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "Can be added via custom code."
 				},
 				"tooltip-media": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "Can be added via custom code."
 				},
 				"detail-area": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "Can be added via custom code."
 				},
 				"utfgrid": {
-					"value": 1,
+					"value": 0,
 					"comment": ""
 				}
 			},
 			"graphs": {
 				"bars": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"histogram": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"radial": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"nodelink": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 1,
+					"comment": "Using the force-directed graph layout, spatial connections and layouts can easily be achieved."
 				}
 			},
 			"other": {
 				"small-multiple": {
 					"value": 1,
-					"comment": "Beyond simply adding multiple maps as HTML several <a href='http://leafletjs.com/plugins.html#minimaps--synced-maps'>Plugins</a> help synchronize maps"
+					"comment": ""
 				},
 				"time-series": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"cmv": {
 					"value": 0,
@@ -276,8 +276,8 @@
 					"comment": ""
 				},
 				"draw-shape": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#edit-geometries'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"tap-area": {
 					"value": 1,
@@ -294,29 +294,29 @@
 			},
 			"time": {
 				"static": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"animation": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"start-stop": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"select": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"select-range": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				}
 			},
 			"other": {
 				"brush-link": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			}
@@ -324,11 +324,11 @@
 		"output": {
 			"static": {
 				"image": {
-					"value": 0,
-					"comment": ""
+					"value": 2,
+					"comment": "Instead of using the standard output format SVG, D3 can easily be modified to use Canvas, though some features are difficult to implement."
 				},
 				"vector": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			},
