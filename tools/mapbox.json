@@ -193,7 +193,7 @@
 			"metadata": {
 				"tooltip-text": {
 					"value": 1,
-					"comment": "Through the UTFGrid tooltips can be achieved, the styling etc. can be build through js/css on the client side.""comment": ""
+					"comment": "Through the UTFGrid tooltips can be achieved, the styling etc. can be build through js/css on the client side."
 				},
 				"tooltip-graph": {
 					"value": 1,
