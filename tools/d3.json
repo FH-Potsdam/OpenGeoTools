@@ -5,13 +5,13 @@
 	"name": "D3",
 	"version": "0.9.8",
 	"url": "http://www.d3js.org",
-	
-	
+
+
 	"type": {
 		"output": "web",
 		"languages": ["JavaScript","HTML","CSS"]
 	},
-	
+
 	"features": {
 		"data-structure": {
 			"spatial": {
@@ -45,7 +45,7 @@
 				}
 			}
 		},
-		
+
 		"data-operations": {
 			"geocoder": {
 				"value": 0,
@@ -61,7 +61,7 @@
 			}
 
 		},
-		
+
 		"data-source": {
 			"fileformat": {
 				"csv": {
@@ -116,7 +116,7 @@
 				},
 				"url": {
 					"value": 0,
-					"comment": ""					
+					"comment": ""
 				},
 				"mbtiles": {
 					"value": 0,
@@ -124,7 +124,7 @@
 				}
 			}
 		},
-		
+
 		"visualization": {
 			"basemap": {
 				"image": {
