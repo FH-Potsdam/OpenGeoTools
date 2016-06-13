@@ -27,21 +27,25 @@
 				"multilines": {
 					"value": 1,
 					"comment": "",
+					"label":"MultiLines",
 					"description":"This field means this and that"
 				},
 				"polygon": {
 					"value": 1,
 					"comment": "",
+					"label":"Polygon",
 					"description":"This field means this and that"
 				},
 				"multipolygon": {
 					"value": 1,
 					"comment": "",
+					"label":"MultiPolygon",
 					"description":"This field means this and that"
 				},
 				"collection": {
 					"value": 1,
 					"comment": "",
+					"label":"Collection",
 					"description":"This field means this and that"
 				}
 			}
@@ -52,11 +56,13 @@
 			"label": "Data Operations",
 			"geocoder": {
 				"value": 2,
+				"label":"Geocoder (Gazeteer)",
 				"comment": "Provides a utility class using an external service."
 			},
 			"distance": {
 				"value": 1,
 				"comment": "",
+				"label":"Distance",
 				"description":"This field means this and that"
 			},
 			"contains": {
@@ -72,37 +78,44 @@
 				"description":"Short description",
 				"csv": {
 					"value": 3,
+					"label":"CSV",
 					"comment": "Able to parse CSV, but manual semantic field matching.",
 					"description":"This field means this and that"
 				},
 				"geojson": {
 					"value": 1,
 					"comment": "",
+					"label":"GeoJSON",
 					"description":"This field means this and that"
 				},
 				"kml": {
 					"value": 0,
 					"comment": "",
+					"label":"KML",
 					"description":"This field means this and that"
 				},
 				"shp": {
 					"value": 0,
 					"comment": "",
+					"label":"Shapefile",
 					"description":"This field means this and that"
 				},
 				"gml": {
 					"value": 0,
 					"comment": "",
+					"label":"GML",
 					"description":"This field means this and that"
 				},
 				"gpx": {
 					"value": 3,
 					"comment": "",
+					"label":"GPX",
 					"description":"This field means this and that"
 				},
 				"geotiff" : {
 					"value": 0,
 					"comment": "",
+					"label":"GeoTIFF",
 					"description":"This field means this and that"
 				}
 			},
@@ -115,16 +128,19 @@
 				},
 				"wfs": {
 					"value": 3,
+					"label":"WFS",
 					"comment": "Provides examples for querying features"
 				},
 				"wmts": {
 					"value": 1,
 					"comment": "",
+					"label":"WMTS",
 					"description":"This field means this and that"
 				},
 				"postgis": {
 					"value": 0,
 					"comment": "",
+					"label":"PostGIS",
 					"description":"This field means this and that"
 				},
 				"localfile": {
@@ -148,16 +164,19 @@
 				"image": {
 					"value": 1,
 					"comment": "",
+					"label":"Image",
 					"description":"This field means this and that"
 				},
 				"tiles": {
 					"value": 1,
+					"label":"Tiles",
 					"comment": "",
 					"description":"This field means this and that"
 				},
 				"vector": {
 					"value": 1,
 					"comment": "",
+					"label":"Vector",
 					"description":"This field means this and that"
 				}
 			},
