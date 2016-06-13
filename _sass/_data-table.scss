@@ -7,25 +7,80 @@ th {
   text-align: left;
 }
 
-tr.topCategory-1 {
-    background-color: $taxonomy-color-1;
-}
-tr.topCategory-2 {
-    background-color: $taxonomy-color-2;
-}
-tr.topCategory-3 {
-    background-color: $taxonomy-color-3;
-}
-tr.topCategory-4 {
-    background-color: $taxonomy-color-4;
-}
-tr.topCategory-5 {
-    background-color: $taxonomy-color-5;
-}
-tr.topCategory-6 {
-    background-color: $taxonomy-color-6;
+tr{
+	&.topCategory-1 {
+    	background-color: $taxonomy-color-1;
+	}
+	&.topCategory-2 {
+	    background-color: $taxonomy-color-2;
+	}
+	&.topCategory-3 {
+	    background-color: $taxonomy-color-3;
+	}
+	&.topCategory-4 {
+	    background-color: $taxonomy-color-4;
+	}
+	&.topCategory-5 {
+	    background-color: $taxonomy-color-5;
+	}
+	&.topCategory-6 {
+	    background-color: $taxonomy-color-6;
+	}
+	&:hover{
+		&.topCategory-1 {
+	    	background-color: $taxonomy-dark-color-1;
+		}
+		&.topCategory-2 {
+		    background-color: $taxonomy-dark-color-2;
+		}
+		&.topCategory-3 {
+		    background-color: $taxonomy-dark-color-3;
+		}
+		&.topCategory-4 {
+		    background-color: $taxonomy-dark-color-4;
+		}
+		&.topCategory-5 {
+		    background-color: $taxonomy-dark-color-5;
+		}
+		&.topCategory-6 {
+		    background-color: $taxonomy-dark-color-6;
+		}
+	}
 }
 
+td.featCategory-0{
+	background-color: $feature-color-0;
+}
+
+td.featCategory-1{
+	background-color: $feature-color-1;
+}
+
+td.featCategory-2{
+	background-color: $feature-color-2;
+}
+
+td.featCategory-3{
+	background-color: $feature-color-3;
+}
+
+tr:hover{
+	td.featCategory-0{
+		background-color: $feature-dark-color-0;
+	}
+
+	td.featCategory-1{
+		background-color: $feature-dark-color-1;
+	}
+
+	td.featCategory-2{
+		background-color: $feature-dark-color-2;
+	}
+
+	td.featCategory-3{
+		background-color: $feature-dark-color-3;
+	}
+}
 
 tr.categorySpacer > td
 {
