@@ -175,6 +175,16 @@
 	text-align:center;
 	display:block;
 	width:100%;
+	img{
+		width:80px;
+		height:auto;
+		margin-right:20px;
+	}
+	span{
+		font-family:$base-font-family;
+		font-weight:bold;
+		font-size:40px;
+	}
 }
 
 /**
