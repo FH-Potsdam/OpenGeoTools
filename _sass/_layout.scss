@@ -162,7 +162,20 @@
     }
 }
 
+.site-header{
+	border-top:10px solid #5f9cb2;
+	height:250px;
+	background-image:url(../images/header.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
 
+.site-header p{
+	padding-top:50px;
+	text-align:center;
+	display:block;
+	width:100%;
+}
 
 /**
  * Page content
