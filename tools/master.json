@@ -74,6 +74,7 @@
 
 		"data-source": {
 			"description":"Short description",
+			"label": "Data Sources",
 			"fileformat": {
 				"description":"Short description",
 				"csv": {
@@ -158,6 +159,7 @@
 		},
 
 		"visualization": {
+			"label": "Visualizations",
 			"description":"Short description",
 			"basemap": {
 				"description":"Short description",
@@ -217,31 +219,37 @@
 			"area": {
 				"choropleth": {
 					"value": 1,
+					"label":"Choropleth",
 					"comment": "",
 					"description":"This field means this and that"
 				},
 				"grid": {
 					"value": 1,
 					"comment": "",
+					"label":"Grid",
 					"description":"This field means this and that"
 				},
 				"heat": {
 					"value": 1,
 					"comment": "",
+					"label":"Heatmap",
 					"description":"This field means this and that"
 				},
 				"isoline": {
 					"value": 1,
 					"comment": "",
+					"label":"Isoline",
 					"description":"This field means this and that"
 				},
 				"cartogram": {
 					"value": 1,
 					"comment": "",
+					"label":"Cartogram",
 					"description":"This field means this and that"
 				}
 			},
 			"metadata": {
+				"label": "Metadata",
 				"tooltip-text": {
 					"value": 1,
 					"comment": "",
@@ -269,6 +277,7 @@
 				}
 			},
 			"graphs": {
+				"label": "Graphs",
 				"bars": {
 					"value": 1,
 					"comment": "",
@@ -291,6 +300,7 @@
 				}
 			},
 			"other": {
+				"label": "Other",
 				"small-multiple": {
 					"value": 1,
 					"comment": "",
@@ -310,30 +320,37 @@
 		},
 		"interactions": {
 			"description":"Short description",
+			"label": "Interactions",
 			"map": {
+				"label": "Map",
 				"description":"Short description",
 				"pan": {
 					"value": 1,
 					"comment": "",
+					"label": "Pan",
 					"description":"This field means this and that"
 				},
 				"zoom": {
 					"value": 1,
 					"comment": "",
+					"label": "Zoom",
 					"description":"This field means this and that"
 				},
 				"rotate": {
 					"value": 1,
 					"comment": "",
+					"label": "Rotate",
 					"description":"This field means this and that"
 				},
 				"tap": {
 					"value": 1,
 					"comment": "",
+					"label": "Tap",
 					"description":"This field means this and that"
 				}
 			},
 			"select": {
+				"label": "Select",
 				"tap-marker": {
 					"value": 1,
 					"comment": "",
@@ -402,16 +419,19 @@
 		},
 		"output": {
 			"description":"Short description",
+			"label": "Output",
 			"static": {
 				"description":"Short description",
 				"image": {
 					"value": 1,
 					"comment": "",
+					"label": "Image",
 					"description":"This field means this and that"
 				},
 				"vector": {
 					"value": 1,
 					"comment": "",
+					"label": "Vector",
 					"description":"This field means this and that"
 				}
 			},
