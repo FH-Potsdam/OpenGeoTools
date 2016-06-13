@@ -205,14 +205,20 @@ layout: default
 
 			for(var j in tools){
 				if(tools[j].file.indexOf("master.json")<0){
-					var t = "-";
+					var t = "-", d = false;
 					if(flat[i][2]===false){
 						if((keys[0] in tools[j].data.features) && (keys[1] in tools[j].data.features[keys[0]]) && ("value" in tools[j].data.features[keys[0]][keys[1]])){
 							t = tools[j].data.features[keys[0]][keys[1]].value;
+							if(tools[j].data.features[keys[0]][keys[1]].comment.length >= 1){
+								d = tools[j].data.features[keys[0]][keys[1]].comment;
+							}
 						}
 					}else{
 						if((keys[0] in tools[j].data.features) && (keys[1] in tools[j].data.features[keys[0]]) && (keys[2] in tools[j].data.features[keys[0]][keys[1]]) && ("value" in tools[j].data.features[keys[0]][keys[1]][keys[2]])){
 							t = tools[j].data.features[keys[0]][keys[1]][keys[2]].value;
+							if(tools[j].data.features[keys[0]][keys[1]][keys[2]].comment.length >= 1){
+								d = tools[j].data.features[keys[0]][keys[1]][keys[2]].comment;
+							}
 						}
 					}
 
@@ -224,11 +230,18 @@ layout: default
 							label = valueObject.label;
 							icon = valueObject.icon;
 					}
-					tr.append("td").attr("class","featCategory-"+t).text(icon);
+					var td = tr.append("td").attr("class","featCategory-"+t).text(icon);
+					if(d){
+						td.attr("data-toggle", "tooltip")
+							.attr("title", d)
+							.classed("td-tooltip", true);
+					}
 				}
 			}
 		}
 
+
+		$('[data-toggle="tooltip"]').tooltip(); 
 
 	}
 
