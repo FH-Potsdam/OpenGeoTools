@@ -4,7 +4,7 @@
 	"id": "cartodb",
 	"name": "CartoDB",
 	"version": "0.9.8",
-	"url": "http://www.leafletjs.com",
+	"url": "http://www.cartodb.com",
 	
 	
 	"type": {
@@ -48,16 +48,16 @@
 		
 		"data-operations": {
 			"geocoder": {
-				"value": 2,
-				"comment": "via <a href='http://leafletjs.com/plugins.html#geocoding'>Plugin</a>."
+				"value": 1,
+				"comment": ""
 			},
 			"distance": {
 				"value": 1,
-				"comment": "distanceTo( <LatLng> otherLatlng )"
+				"comment": "Most PostGIS commands are available (ST_Dist)."
 			},
 			"contains": {
-				"value": 3,
-				"comment": "Only for rectangles."
+				"value": 1,
+				"comment": "Most PostGIS commands are available (ST_Contains, ST_Intersects, etc.)."
 			}
 
 		},
@@ -65,28 +65,28 @@
 		"data-source": {
 			"fileformat": {
 				"csv": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"geojson": {
 					"value": 1,
 					"comment": ""
 				},
 				"kml": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"shp": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"gml": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"gpx": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"geotiff" : {
 					"value": 0,
@@ -95,28 +95,28 @@
 			},
 			"server": {
 				"wms": {
-					"value": 1,
-					"comment": "Complex wms servers can be integrated through additional <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugins</a>"
-				},
-				"wfs": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugin</a>"
-				},
-				"wmts": {
-					"value": 1,
-					"comment": "Complex wms servers can be integrated through additional <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugins</a>"
-				},
-				"postgis": {
 					"value": 0,
 					"comment": ""
 				},
-				"localfile": {
+				"wfs": {
 					"value": 0,
+					"comment": ""
+				},
+				"wmts": {
+					"value": 0,
+					"comment": ""
+				},
+				"postgis": {
+					"value": 2,
+					"comment": "CartoDB is basically a Postgres/PostGIS interface."
+				},
+				"localfile": {
+					"value": 1,
 					"comment": ""
 				},
 				"url": {
-					"value": 0,
-					"comment": ""					
+					"value": 1,
+					"comment": "CartoDB allows not only URL-import but features a Cloud-Service-Importer"
 				},
 				"mbtiles": {
 					"value": 0,
@@ -136,8 +136,8 @@
 					"comment": ""
 				},
 				"vector": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#vector-tiles'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				}
 			},
 			"marker": {
@@ -150,21 +150,21 @@
 					"comment": ""
 				},
 				"complex": {
-					"value": 1,
-					"comment": "Markers can be build from custom HTML."
+					"value": 0,
+					"comment": ""
 				}
 			},
 			"relations": {
 				"connections": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"connections-attr": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"connections-weight": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			},
@@ -174,16 +174,16 @@
 					"comment": "e.g. via GeoJSON"
 				},
 				"grid": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#clusteringdecluttering'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"heat": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#heatmaps'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"isoline": {
-					"value": 2,
-					"comment": "the calculation of Isolines needs to be aggregated from external APIs"
+					"value": 1,
+					"comment": ""
 				},
 				"cartogram": {
 					"value": 0,
@@ -208,36 +208,36 @@
 					"comment": ""
 				},
 				"utfgrid": {
-					"value": 1,
+					"value": 0,
 					"comment": ""
 				}
 			},
 			"graphs": {
 				"bars": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "CartoDB offers a javascript library to query the cartodb data structures and thereby create visualizations using other libraries"
 				},
 				"histogram": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "CartoDB offers a javascript library to query the cartodb data structures and thereby create visualizations using other libraries"
 				},
 				"radial": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "CartoDB offers a javascript library to query the cartodb data structures and thereby create visualizations using other libraries"
 				},
 				"nodelink": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "CartoDB offers a javascript library to query the cartodb data structures and thereby create visualizations using other libraries"
 				}
 			},
 			"other": {
 				"small-multiple": {
 					"value": 1,
-					"comment": "Beyond simply adding multiple maps as HTML several <a href='http://leafletjs.com/plugins.html#minimaps--synced-maps'>Plugins</a> help synchronize maps"
+					"comment": ""
 				},
 				"time-series": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"cmv": {
 					"value": 0,
@@ -246,9 +246,7 @@
 			}
 		},
 		"interactions": {
-			"description":"Short description",
 			"map": {
-				"description":"Short description",
 				"pan": {
 					"value": 1,
 					"comment": ""
@@ -276,8 +274,8 @@
 					"comment": ""
 				},
 				"draw-shape": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#edit-geometries'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"tap-area": {
 					"value": 1,
@@ -294,29 +292,29 @@
 			},
 			"time": {
 				"static": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"animation": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"start-stop": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"select": {
-					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"select-range": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "With a customized controller this can be achieved, examples available."
 				}
 			},
 			"other": {
 				"brush-link": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			}
@@ -324,17 +322,17 @@
 		"output": {
 			"static": {
 				"image": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"vector": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			},
 			"dynamic": {
 				"animation": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"interactive-web": {
@@ -348,7 +346,7 @@
 			},
 			"extendable": {
 				"value": 1,
-				"comment": ""
+				"comment": "Custom Postgres code can be used in the GUI and an API for external access is available as well"
 			}
 		}
 	}
