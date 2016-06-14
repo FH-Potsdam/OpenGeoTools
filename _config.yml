@@ -15,7 +15,7 @@ twitter_username: seb_meier
 github_username:  sebastian-meier
 
 # URL settings
-url: "http://127.0.0.1:4000/"
+url: "https://fh-potsdam.github.io/OpenGeoTools/"
 bootstrap-url: "https://maxcdn.bootstrapcdn.com/bootstrap/"
 jquery-url: "https://code.jquery.com/"
 d3-url: "https://cdnjs.cloudflare.com/"
