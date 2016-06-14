@@ -49,7 +49,7 @@
 		"data-operations": {
 			"geocoder": {
 				"value": 2,
-				"comment": "via <a href='#URL'>Plugin</a>."
+				"comment": "via <a href='http://michaelminn.com/linux/mmqgis/'>Plugin</a>."
 			},
 			"distance": {
 				"value": 1,
@@ -120,7 +120,7 @@
 				},
 				"mbtiles": {
 					"value": 0,
-					"comment": "#URL"
+					"comment": ""
 				}
 			}
 		},
@@ -132,12 +132,12 @@
 					"comment": ""
 				},
 				"tiles": {
-					"value": 2,
-					"comment": "#URL"
+					"value": 1,
+					"comment": ""
 				},
 				"vector": {
-					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				}
 			},
 			"marker": {
@@ -156,16 +156,16 @@
 			},
 			"relations": {
 				"connections": {
-					"value": 0,
-					"comment": "#URL"
+					"value": 1,
+					"comment": ""
 				},
 				"connections-attr": {
-					"value": 0,
-					"comment": "#URL"
+					"value": 1,
+					"comment": ""
 				},
 				"connections-weight": {
-					"value": 0,
-					"comment": "#URL"
+					"value": 1,
+					"comment": ""
 				}
 			},
 			"area": {
@@ -174,20 +174,20 @@
 					"comment": ""
 				},
 				"grid": {
-					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"heat": {
-					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"isoline": {
 					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": "via <a href='https://plugins.qgis.org/plugins/contour/'>Plugin</a>"
 				},
 				"cartogram": {
 					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": "via <a href='https://plugins.qgis.org/plugins/cartogram/'>Plugin</a>"
 				}
 			},
 			"metadata": {
@@ -208,36 +208,36 @@
 					"comment": ""
 				},
 				"utfgrid": {
-					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				}
 			},
 			"graphs": {
 				"bars": {
-					"value": 0,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"histogram": {
 					"value": 0,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": ""
 				},
 				"radial": {
 					"value": 0,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": ""
 				},
 				"nodelink": {
 					"value": 0,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": ""
 				}
 			},
 			"other": {
 				"small-multiple": {
 					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": "Only via <a href='http://docs.qgis.org/2.0/en/docs/user_manual/print_composer/print_composer.html'>Print Composer</a>"
 				},
 				"time-series": {
 					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"comment": "e.g. via <a href='https://plugins.qgis.org/plugins/timemanager/'>Plugin</a>"
 				},
 				"cmv": {
 					"value": 0,
@@ -246,9 +246,7 @@
 			}
 		},
 		"interactions": {
-			"description":"Short description",
 			"map": {
-				"description":"Short description",
 				"pan": {
 					"value": 1,
 					"comment": ""
@@ -258,8 +256,8 @@
 					"comment": ""
 				},
 				"rotate": {
-					"value": 0,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"tap": {
 					"value": 1,
@@ -276,8 +274,8 @@
 					"comment": ""
 				},
 				"draw-shape": {
-					"value": 2,
-					"comment": "via <a href='#URL'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"tap-area": {
 					"value": 1,
@@ -295,23 +293,23 @@
 			"time": {
 				"static": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "e.g. via <a href='https://plugins.qgis.org/plugins/timemanager/'>Plugin</a>"
 				},
 				"animation": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "e.g. via <a href='https://plugins.qgis.org/plugins/timemanager/'>Plugin</a>"
 				},
 				"start-stop": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "e.g. via <a href='https://plugins.qgis.org/plugins/timemanager/'>Plugin</a>"
 				},
 				"select": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "e.g. via <a href='https://plugins.qgis.org/plugins/timemanager/'>Plugin</a>"
 				},
 				"select-range": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "e.g. via <a href='https://plugins.qgis.org/plugins/timemanager/'>Plugin</a>"
 				}
 			},
 			"other": {
@@ -339,11 +337,11 @@
 				},
 				"interactive-web": {
 					"value": 1,
-					"comment": ""
+					"comment": "Several Plugins allow exporting to interactive systems e.g. <a href='https://github.com/Geolicious/qgis2leaf'>Leaflet</a>"
 				},
 				"interactive-desktop": {
-					"value": 1,
-					"comment": "#URL"
+					"value": 0,
+					"comment": ""
 				}
 			},
 			"extendable": {
