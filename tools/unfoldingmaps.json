@@ -64,7 +64,7 @@
 		"data-source": {
 			"fileformat": {
 				"csv": {
-					"value": 3,
+					"value": 2,
 					"comment": "Able to parse CSV, but manual semantic field matching."
 				},
 				"geojson": {
@@ -84,8 +84,8 @@
 					"comment": ""
 				},
 				"gpx": {
-					"value": 3,
-					"comment": ""
+					"value": 2,
+					"comment": "Partial implementation of the spec."
 				},
 				"geotiff" : {
 					"value": 0,
@@ -149,6 +149,42 @@
 				"complex": {
 					"value": 1,
 					"comment": ""
+				}
+			},
+			"relations": {
+				"connections": {
+					"value": 1,
+					"comment": ""
+				},
+				"connections-attr": {
+					"value": 2,
+					"comment": ""
+				},
+				"connections-weight": {
+					"value": 2,
+					"comment": ""
+				}
+			},
+			"area": {
+				"choropleth": {
+					"value": 1,
+					"comment": ""
+				},
+				"grid": {
+					"value": 2,
+					"comment": "Example shows how to implement this."
+				},
+				"heat": {
+					"value": 0,
+					"comment": ""
+				},
+				"isoline": {
+					"value": 2,
+					"comment": "Example shows how to implement this."
+				},
+				"cartogram": {
+					"value": 2,
+					"comment": "Example shows how to implement a Dorling cartogram."
 				}
 			}
 
