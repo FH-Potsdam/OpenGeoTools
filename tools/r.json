@@ -3,13 +3,13 @@
 {
 	"id": "r",
 	"name": "R",
-	"version": "0.9.8",
-	"url": "http://www.leafletjs.com",
+	"version": "3.3.0",
+	"url": "https://www.r-project.org/",
 	
 	
 	"type": {
-		"output": "web",
-		"languages": ["JavaScript","HTML","CSS"]
+		"output": "graphic",
+		"languages": ["R-Language"]
 	},
 	
 	"features": {
@@ -49,11 +49,11 @@
 		"data-operations": {
 			"geocoder": {
 				"value": 2,
-				"comment": "via <a href='http://leafletjs.com/plugins.html#geocoding'>Plugin</a>."
+				"comment": "via <a href='https://github.com/jonataswalker/ol3-geocoder'>Plugin</a>."
 			},
 			"distance": {
 				"value": 1,
-				"comment": "distanceTo( <LatLng> otherLatlng )"
+				"comment": ""
 			},
 			"contains": {
 				"value": 3,
@@ -65,28 +65,28 @@
 		"data-source": {
 			"fileformat": {
 				"csv": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 0,
+					"comment": ""
 				},
 				"geojson": {
 					"value": 1,
 					"comment": ""
 				},
 				"kml": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"shp": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
-				},
-				"gml": {
 					"value": 0,
 					"comment": ""
 				},
+				"gml": {
+					"value": 1,
+					"comment": ""
+				},
 				"gpx": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"geotiff" : {
 					"value": 0,
