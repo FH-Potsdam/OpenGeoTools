@@ -10,9 +10,15 @@ title: Open Geo Tools
 email: your-email@domain.com
 description: A survey on capabilities and functionalities of open geo tools. Companion to our abstract at the German Cartography conference.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://fh-potsdam.github.io/OpenGeoTools/" # the base hostname & protocol for your site
+#url: "https://fh-potsdam.github.io/OpenGeoTools/" # the base hostname & protocol for your site
 twitter_username: seb_meier
 github_username:  sebastian-meier
+
+# URL settings
+url: "http://127.0.0.1:4000/"
+bootstrap-url: "https://maxcdn.bootstrapcdn.com/bootstrap/"
+jquery-url: "https://code.jquery.com/"
+d3-url: "https://cdnjs.cloudflare.com/"
 
 include: [tools]
 
