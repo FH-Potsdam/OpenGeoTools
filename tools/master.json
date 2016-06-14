@@ -9,19 +9,16 @@
 				"label": "Spatial",
 				"points": {
 					"value": 1,
-					"comment": "",
 					"label":"Point",
-					"description":"This field means this and that"
+					"description":"Able to handle point locations."
 				},
 				"multipoints": {
 					"value": 1,
-					"comment": "",
 					"label":"MultiPoint",
-					"description":"This field means this and that"
+					"description":"Able to handle multi point locations"
 				},
 				"lines": {
 					"value": 1,
-					"comment": "",
 					"label":"Lines"
 				},
 				"multilines": {
@@ -46,7 +43,7 @@
 					"value": 1,
 					"comment": "",
 					"label":"Collection",
-					"description":"This field means this and that"
+					"description":"Able to handle collections of geo features."
 				}
 			}
 		},
@@ -61,14 +58,12 @@
 			},
 			"distance": {
 				"value": 1,
-				"comment": "",
 				"label":"Distance",
-				"description":"This field means this and that"
+				"description":"Enables to calculate (an approximation) of the distance between two locations."
 			},
 			"contains": {
 				"value": 1,
-				"comment": "",
-				"description":"This field means this and that"
+				"description":"Enables to check whether a location is within an area."
 			}
 		},
 
@@ -80,69 +75,60 @@
 				"csv": {
 					"value": 3,
 					"label":"CSV",
-					"comment": "",
-					"description":"This field means this and that"
+					"description":"Able to handle CSV (Comma Separated Values) files."
 				},
 				"geojson": {
 					"value": 1,
-					"comment": "",
 					"label":"GeoJSON",
-					"description":"This field means this and that"
+					"description":"Able to handle GeoJSON files."
 				},
 				"kml": {
 					"value": 0,
-					"comment": "",
 					"label":"KML",
-					"description":"This field means this and that"
+					"description":"Able to handle KML (Keyhole Markup Language) files."
 				},
 				"shp": {
 					"value": 0,
-					"comment": "",
 					"label":"Shapefile",
-					"description":"This field means this and that"
+					"description":"Able to handle SHP (Shapefile) files."
 				},
 				"gml": {
 					"value": 0,
-					"comment": "",
 					"label":"GML",
-					"description":"This field means this and that"
+					"description":"Able to handle GML (Geography Markup Language) files."
 				},
 				"gpx": {
 					"value": 3,
-					"comment": "",
 					"label":"GPX",
-					"description":"This field means this and that"
+					"description":"Able to handle GPX (GPS Exchange Format) files."
 				},
 				"geotiff" : {
 					"value": 0,
-					"comment": "",
 					"label":"GeoTIFF",
-					"description":"This field means this and that"
+					"description":"Able to handle GeoTIFF files (images with geo metadata)."
 				}
 			},
 			"server": {
 				"description":"Short description",
 				"wms": {
 					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
+					"label": "WMS",
+					"description":""
 				},
 				"wfs": {
 					"value": 3,
 					"label":"WFS",
-					"description": "Provides examples for querying features"
+					"description": ""
 				},
 				"wmts": {
 					"value": 1,
-					"comment": "",
 					"label":"WMTS",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"postgis": {
 					"value": 0,
-					"comment": "",
 					"label":"PostGIS",
-					"description":"This field means this and that"
+					"description":"Able to query and parse a PostGIS database."
 				},
 				"localfile": {
 
@@ -152,46 +138,48 @@
 				},
 				"mbtiles": {
 					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
+					"description":"Able to read and show map tiles for a MBTiles file."
 				}
 			}
 		},
 
 		"visualization": {
 			"label": "Visualizations",
-			"description":"Short description",
+			"description":"Various types of supported data visualizations.",
+
 			"basemap": {
-				"description":"Short description",
+				"description": "A base map.",
 				"image": {
 					"value": 1,
 					"label":"Image",
-					"description":"This field means this and that"
+					"description": "Able to handle an image as base map."
 				},
 				"tiles": {
 					"value": 1,
 					"label":"Tiles",
-					"description":"This field means this and that"
+					"description": "Able to handle map tiles as base map."
 				},
 				"vector": {
 					"value": 1,
 					"label":"Vector",
-					"description":"This field means this and that"
+					"description": "Able to handle vector data or vector tiles as base map."
 				}
 			},
 			"marker": {
+				"label": "Marker",
 				"simple": {
+					"label": "Simple",
 					"value": 1,
 					"description":"Provides out-of-the-box markers for all supported types."
 				},
 				"custom": {
 					"value": 1,
-					"comment": "",
+					"label": "Custom",
 					"description":"Provides customization of simple markers."
 				},
 				"complex": {
 					"value": 1,
-					"comment": "",
+					"label": "Complex",
 					"description":"Provides means to create complex markers, e.g. to show data based glyphs at a location."
 				}
 			},
