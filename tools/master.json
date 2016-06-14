@@ -56,8 +56,8 @@
 			"label": "Data Operations",
 			"geocoder": {
 				"value": 2,
-				"label":"Geocoder (Gazeteer)",
-				"comment": "Provides a utility class using an external service."
+				"label":"Geocoder",
+				"description": "A gazeteer to lookup and/or convert adresses to geo coordinates."
 			},
 			"distance": {
 				"value": 1,
@@ -80,7 +80,7 @@
 				"csv": {
 					"value": 3,
 					"label":"CSV",
-					"comment": "Able to parse CSV, but manual semantic field matching.",
+					"comment": "",
 					"description":"This field means this and that"
 				},
 				"geojson": {
@@ -130,7 +130,7 @@
 				"wfs": {
 					"value": 3,
 					"label":"WFS",
-					"comment": "Provides examples for querying features"
+					"description": "Provides examples for querying features"
 				},
 				"wmts": {
 					"value": 1,
@@ -165,19 +165,16 @@
 				"description":"Short description",
 				"image": {
 					"value": 1,
-					"comment": "",
 					"label":"Image",
 					"description":"This field means this and that"
 				},
 				"tiles": {
 					"value": 1,
 					"label":"Tiles",
-					"comment": "",
 					"description":"This field means this and that"
 				},
 				"vector": {
 					"value": 1,
-					"comment": "",
 					"label":"Vector",
 					"description":"This field means this and that"
 				}
@@ -185,53 +182,47 @@
 			"marker": {
 				"simple": {
 					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
+					"description":"Provides out-of-the-box markers for all supported types."
 				},
 				"custom": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":"Provides customization of simple markers."
 				},
 				"complex": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":"Provides means to create complex markers, e.g. to show data based glyphs at a location."
 				}
 			},
 			"relations": {
 				"connections": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":"Provides means to show connections between markers."
 				},
 				"connections-attr": {
 					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
+					"description":"Enables to map data attributes to visual properties of the connections."
 				},
 				"connections-weight": {
 					"value": 1,
-					"comment": "",
-					"description":"This field means this and that"
+					"description":"Enables to visualize varying connection weights."
 				}
 			},
 			"area": {
 				"choropleth": {
 					"value": 1,
 					"label":"Choropleth",
-					"comment": "",
-					"description":"This field means this and that"
+					"description":"Enables to map data attributes to visual properties of polygons."
 				},
 				"grid": {
 					"value": 1,
-					"comment": "",
 					"label":"Grid",
 					"description":"This field means this and that"
 				},
 				"heat": {
 					"value": 1,
-					"comment": "",
 					"label":"Heatmap",
 					"description":"This field means this and that"
 				},
