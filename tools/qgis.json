@@ -4,12 +4,12 @@
 	"id": "qgis",
 	"name": "QGIS",
 	"version": "0.9.8",
-	"url": "http://www.leafletjs.com",
+	"url": "http://www.qgis.org",
 	
 	
 	"type": {
-		"output": "web",
-		"languages": ["JavaScript","HTML","CSS"]
+		"output": "desktop",
+		"languages": [""]
 	},
 	
 	"features": {
@@ -49,15 +49,15 @@
 		"data-operations": {
 			"geocoder": {
 				"value": 2,
-				"comment": "via <a href='http://leafletjs.com/plugins.html#geocoding'>Plugin</a>."
+				"comment": "via <a href='#URL'>Plugin</a>."
 			},
 			"distance": {
 				"value": 1,
-				"comment": "distanceTo( <LatLng> otherLatlng )"
+				"comment": ""
 			},
 			"contains": {
-				"value": 3,
-				"comment": "Only for rectangles."
+				"value": 1,
+				"comment": ""
 			}
 
 		},
@@ -65,62 +65,62 @@
 		"data-source": {
 			"fileformat": {
 				"csv": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"geojson": {
 					"value": 1,
 					"comment": ""
 				},
 				"kml": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"shp": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"gml": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"gpx": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#overlay-data-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"geotiff" : {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			},
 			"server": {
 				"wms": {
 					"value": 1,
-					"comment": "Complex wms servers can be integrated through additional <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugins</a>"
+					"comment": ""
 				},
 				"wfs": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugin</a>"
+					"value": 1,
+					"comment": ""
 				},
 				"wmts": {
 					"value": 1,
-					"comment": "Complex wms servers can be integrated through additional <a href='http://leafletjs.com/plugins.html#basemap-formats'>Plugins</a>"
+					"comment": ""
 				},
 				"postgis": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"localfile": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"url": {
-					"value": 0,
+					"value": 1,
 					"comment": ""					
 				},
 				"mbtiles": {
 					"value": 0,
-					"comment": ""
+					"comment": "#URL"
 				}
 			}
 		},
@@ -132,12 +132,12 @@
 					"comment": ""
 				},
 				"tiles": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "#URL"
 				},
 				"vector": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#vector-tiles'>Plugin</a>"
+					"comment": "via <a href='#URL'>Plugin</a>"
 				}
 			},
 			"marker": {
@@ -150,44 +150,44 @@
 					"comment": ""
 				},
 				"complex": {
-					"value": 1,
-					"comment": "Markers can be build from custom HTML."
+					"value": 0,
+					"comment": ""
 				}
 			},
 			"relations": {
 				"connections": {
 					"value": 0,
-					"comment": ""
+					"comment": "#URL"
 				},
 				"connections-attr": {
 					"value": 0,
-					"comment": ""
+					"comment": "#URL"
 				},
 				"connections-weight": {
 					"value": 0,
-					"comment": ""
+					"comment": "#URL"
 				}
 			},
 			"area": {
 				"choropleth": {
 					"value": 1,
-					"comment": "e.g. via GeoJSON"
+					"comment": ""
 				},
 				"grid": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#clusteringdecluttering'>Plugin</a>"
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"heat": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#heatmaps'>Plugin</a>"
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"isoline": {
 					"value": 2,
-					"comment": "the calculation of Isolines needs to be aggregated from external APIs"
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"cartogram": {
-					"value": 0,
-					"comment": ""
+					"value": 2,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				}
 			},
 			"metadata": {
@@ -208,36 +208,36 @@
 					"comment": ""
 				},
 				"utfgrid": {
-					"value": 1,
-					"comment": ""
+					"value": 2,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				}
 			},
 			"graphs": {
 				"bars": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"histogram": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"radial": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"nodelink": {
-					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#dataviz'>Plugin</a>"
+					"value": 0,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				}
 			},
 			"other": {
 				"small-multiple": {
-					"value": 1,
-					"comment": "Beyond simply adding multiple maps as HTML several <a href='http://leafletjs.com/plugins.html#minimaps--synced-maps'>Plugins</a> help synchronize maps"
+					"value": 2,
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"time-series": {
 					"value": 2,
-					"comment": "Several tools and <a href='http://leafletjs.com/plugins.html#time--elevation'>Plugins</a> extend leaflet for visualizing time-series data: e.g. <a href='https://github.com/socib/Leaflet.TimeDimension'>Leaflet.TimeDimensions</a> or <a href='https://github.com/sebastian-meier/HeatTile-Stream'>HeatTile-Stream</a>"
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"cmv": {
 					"value": 0,
@@ -259,7 +259,7 @@
 				},
 				"rotate": {
 					"value": 0,
-					"comment": ""
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"tap": {
 					"value": 1,
@@ -277,7 +277,7 @@
 				},
 				"draw-shape": {
 					"value": 2,
-					"comment": "via <a href='http://leafletjs.com/plugins.html#edit-geometries'>Plugin</a>"
+					"comment": "via <a href='#URL'>Plugin</a>"
 				},
 				"tap-area": {
 					"value": 1,
@@ -324,11 +324,11 @@
 		"output": {
 			"static": {
 				"image": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				},
 				"vector": {
-					"value": 0,
+					"value": 1,
 					"comment": ""
 				}
 			},
@@ -342,13 +342,13 @@
 					"comment": ""
 				},
 				"interactive-desktop": {
-					"value": 0,
-					"comment": ""
+					"value": 1,
+					"comment": "#URL"
 				}
 			},
 			"extendable": {
-				"value": 1,
-				"comment": ""
+				"value": 2,
+				"comment": "Properly extending QGis requires sophisticated programming skills."
 			}
 		}
 	}
