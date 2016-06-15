@@ -5,7 +5,7 @@
 			"description":"Structure of data the tool can read and process.",
 			"label": "Data Structure",
 			"spatial": {
-				"description":"Short description",
+				"description":"",
 				"label": "Spatial",
 				"points": {
 					"value": 1,
@@ -25,19 +25,19 @@
 					"value": 1,
 					"comment": "",
 					"label":"MultiLines",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"polygon": {
 					"value": 1,
 					"comment": "",
 					"label":"Polygon",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"multipolygon": {
 					"value": 1,
 					"comment": "",
 					"label":"MultiPolygon",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"collection": {
 					"value": 1,
@@ -68,10 +68,10 @@
 		},
 
 		"data-source": {
-			"description":"Short description",
+			"description":"",
 			"label": "Data Sources",
 			"fileformat": {
-				"description":"Short description",
+				"description":"",
 				"csv": {
 					"value": 3,
 					"label":"CSV",
@@ -109,7 +109,7 @@
 				}
 			},
 			"server": {
-				"description":"Short description",
+				"description":"",
 				"wms": {
 					"value": 1,
 					"label": "WMS",
@@ -207,24 +207,24 @@
 				"grid": {
 					"value": 1,
 					"label":"Grid",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"heat": {
 					"value": 1,
 					"label":"Heatmap",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"isoline": {
 					"value": 1,
 					"comment": "",
 					"label":"Isoline",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"cartogram": {
 					"value": 1,
 					"comment": "",
 					"label":"Cartogram",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"metadata": {
@@ -232,27 +232,27 @@
 				"tooltip-text": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"tooltip-graph": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"tooltip-media": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"detail-area": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"utfgrid": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"graphs": {
@@ -260,22 +260,22 @@
 				"bars": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"histogram": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"radial": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"nodelink": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"other": {
@@ -283,49 +283,49 @@
 				"small-multiple": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"time-series": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"cmv": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			}
 		},
 		"interactions": {
-			"description":"Short description",
+			"description":"",
 			"label": "Interactions",
 			"map": {
 				"label": "Map",
-				"description":"Short description",
+				"description":"",
 				"pan": {
 					"value": 1,
 					"comment": "",
 					"label": "Pan",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"zoom": {
 					"value": 1,
 					"comment": "",
 					"label": "Zoom",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"rotate": {
 					"value": 1,
 					"comment": "",
 					"label": "Rotate",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"tap": {
 					"value": 1,
 					"comment": "",
 					"label": "Tap",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"select": {
@@ -333,108 +333,108 @@
 				"tap-marker": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"tap-cluster": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"draw-shape": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"tap-area": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"connection": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"button": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"time": {
 				"static": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"animation": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"start-stop": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"select": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"select-range": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"other": {
 				"brush-link": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			}
 		},
 		"output": {
-			"description":"Short description",
+			"description":"",
 			"label": "Output",
 			"static": {
-				"description":"Short description",
+				"description":"",
 				"image": {
 					"value": 1,
 					"comment": "",
 					"label": "Image",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"vector": {
 					"value": 1,
 					"comment": "",
 					"label": "Vector",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"dynamic": {
 				"animation": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"interactive-web": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				},
 				"interactive-desktop": {
 					"value": 1,
 					"comment": "",
-					"description":"This field means this and that"
+					"description":""
 				}
 			},
 			"extendable": {
 				"value": 1,
 				"comment": "",
-				"description":"This field means this and that"
+				"description":""
 			}
 		}
 	}
