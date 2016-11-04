@@ -188,11 +188,85 @@
 				}
 			}
 			
-			
+		},
 
+		"interactions": {
+			"description":"Short description",
+			"map": {
+				"description":"Short description",
+				"pan": {
+					"value": 1,
+					"comment": ""
+				},
+				"zoom": {
+					"value": 1,
+					"comment": ""
+				},
+				"rotate": {
+					"value": 1,
+					"comment": ""
+				},
+				"tap": {
+					"value": 1,
+					"comment": "Integrated multi-touch interactions with slide to pan, pinch to zoom, and multiple finger to rotate."
+				}
+			},
+			"select": {
+				"tap-marker": {
+					"value": 1,
+					"comment": ""
+				},
+				"tap-cluster": {
+					"value": 1,
+					"comment": ""
+				},
+				"connection": {
+					"value": 1,
+					"comment": ""
+				},
+				"button": {
+					"value": 1,
+					"comment": "Selected UI elements are integrated (such as a compass)."
+				}
+			},
+			"other": {
+				"brush-link": {
+					"value": 0,
+					"comment": ""
+				}
+			}
+		},
+		"output": {
+			"static": {
+				"image": {
+					"value": 0,
+					"comment": ""
+				},
+				"vector": {
+					"value": 0,
+					"comment": ""
+				}
+			},
+			"dynamic": {
+				"animation": {
+					"value": 1,
+					"comment": "Export as movie within Processing's built-in capabilities."
+				},
+				"interactive-web": {
+					"value": 2,
+					"comment": "Can be exported as applet. But recommended only for Desktop apps."
+				},
+				"interactive-desktop": {
+					"value": 1,
+					"comment": ""
+				}
+			},
+			"extendable": {
+				"value": 1,
+				"comment": ""
+			}
 		}
 	},
-
 	"comments": {
 	}
 }
